@@ -1,0 +1,24 @@
+{
+  "name": "210529",
+  "version": "1.0.0",
+  "description": "Briefcase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Briefcase"
+  ],
+  "author": "EmmKall",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "gul": "^1.0.0",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^6.0.0"
+  }
+}
