@@ -4,9 +4,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EmmKall</title>
+    <script src="https://kit.fontawesome.com/17860883e4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="build/icon/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="build/css/app.css">
+    
 </head>
 <body>
     
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <div class="container-fluid">
+            <a class="navbar-brand fc-w" href="#">EmmKall</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active fc-w" aria-current="page" href="#sobre">Sobre mi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fc-w" href="#tecnologias">Tecnologias</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle fc-w" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portafolio</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#fontend">Frontend</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#backend">Backend</a></li>
+                    <!-- <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled fc-w" href="#" tabindex="-1" aria-disabled="true">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="header d-flex justify-content-center align-content-center">
+          <div class="d-flex flex-column justify-content-center align-contenr-center">
+            <h2 class="text-center py-3 px-1 rounded-3 bg-primary">Hola, Bienvenido!!! A mi Portafolio <i class="bg-primary px-4 rounded-2 bi bi-briefcase"></i></h2>
+            <h3 class="text-center py-3 rounded-3 bg-dark"><i class="px-2 rounded-2 bi bi-terminal"></i><span>EmmanuelCal: ~</span> Programador-Web </h3>
+            <p class="h4 pt-4 text-center">
+              <a class="fc-w fs-2" target="_blank" href="https://github.com/EmmKall"><span class="px-2 py-1 rounded-circle bg-dark"><i class="bi bi-github"></i></span></a>
+              <a class="fc-w fs-2" target="_blank" href="https://www.linkedin.com/in/emm-cal"><span class="px-2 py-1 rounded-circle bg-primary"><i class="bi bi-linkedin"></i></span></a>
+            </p>
+          </div>
+        </div>
+    </header>
+
+    <main class="about">
+
+      <section id="sobre">
+        <h2 class="h2 text-center py-3 fs-1 fc-w fw-bold bg-dark rounded-3">Sobre Mi</h2>
+        
+        <div class="card">
+          <div class="card-body mt-0">
+            <h4 class="card-text">Persona organizada y con una gran motivación, con una capacidad de adaptación a diferentes circunstancia y dar siempre lo mejor en cualquier proyecto, siempre me esfuerzo por aportar lo mejor y trabajar en equipo.</h4>
+          </div>
+        </div>
+
+        <table class="my-3 container table table-dark table-striped table-borderless">
+          <thead>
+            <tr>
+              <td></td>
+              <td class="fw-bold fs-4">Tecnólogia</td>
+            </tr>
+          </thead>
+
+          <tbody class="icons">
+            <tr>
+              <td class="fw-bolder">Frontend</td>
+              <td>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="bi bi-bootstrap-fill"></i>
+                <i class="fab fa-sass"></i>
+                <i class="fab fa-js-square"></i>
+                <img src="build/icon/jquery.svg" alt="tecnologia">
+                <i class="fab fa-angular"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="fw-bolder">Backend</td>
+              <td>
+                <i class="fab fa-php"></i>
+                <i class="fab fa-laravel"></i>
+                <img src="build/icon/mysql.svg" alt="tegnologia">
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <i class="fab fa-git"></i>
+                <i class="fab fa-github-square"></i>
+                <i class="fab fa-gitlab"></i>
+                <i class="fab fa-docker"></i>
+                <img src="build/icon/npm.svg" alt="tegnologia">
+                <img src="build/icon/composer.svg" alt="tegnologia">
+              </td>
+            </tr>
+          </tbody>
+
+          <tfooter>
+            <tr>
+              <td></td>
+              <td class="fw-bold fs-4">Tecnólogia</td>
+            </tr>
+          </tfooter>
+        </table>
+
+      </section>
+
+      <section class="portafolio">
+        
+      </section>
+    </main>
+
+
+
+    <footer>
+        <nav class="navbar fixed-bottom navbar-expand-sm navbar-primary bg-primary">
+          <div class="container-fluid fw-bold">
+            <a class="navbar-brand fc-w" href="#">EmmKall</a>
+            <a target="_blank" href="mailto:ing.emmanuel.cal@gmail.com"><p class="fc-w fs-5"><i class="bi bi-envelope-fill"></i> ing.emmanuel.cal@gmail.com</p></a>
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=+5585357445"><p class="fc-w fs-5"><i class="bi bi-telephone-fill"></i> +52 55 8535 7445</p></a>
+            <p class="fc-w fs-5"><i class="bi bi-code-slash"></i></p>
+          </div>
+        </nav>
+    </footer>
+
+    
+    <script src="build/js/bootstrap.min.js"></script>
+    <script src="build/js/app.js"></script>
 </body>
 </html>
