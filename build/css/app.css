@@ -416,12 +416,13 @@ body {
 }
 
 @media (min-width: 992px) {
-  .about {
-    height: 75vh;
-  }
   .about table {
     width: 50%;
   }
+}
+
+.sobre {
+  height: 100vh;
 }
 
 .icons tr img {
@@ -479,27 +480,12 @@ body {
 }
 
 .portafolio {
-  width: 100%;
   height: 100vh;
-  background-image: radial-gradient(circle at 50% 50%, rgba(102, 226, 195, 0.534) 0, rgba(89, 209, 187, 0.521) 12.5%, rgba(79, 190, 179, 0.527) 25%, rgba(72, 169, 164, 0.507) 37.5%, #449292 50%, #417b7f 62.5%, #3e686c 75%, #3b575c 87.5%, #38494d 100%), url(../img/wall01.webp);
+  background-image: radial-gradient(circle at 50% 50%, rgba(102, 226, 195, 0.534) 0, rgba(89, 209, 187, 0.521) 12.5%, rgba(79, 190, 179, 0.527) 25%, rgba(72, 169, 164, 0.507) 37.5%, #449292 50%, #417b7f7c 62.5%, #3e686c7e 75%, #3b575c7e 87.5%, #38494d80 100%), url(../img/wall01.webp);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-}
-
-@media (min-width: 992px) {
-  .portafolio {
-    height: 80vh;
-  }
-}
-
-@media (min-width: 992px) {
-  .full {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 2rem;
-  }
 }
 
 .full-content .icons {

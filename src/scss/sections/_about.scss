@@ -9,11 +9,15 @@
     table{width: 90%;}
 
     @include pc{
-        height: 75vh;
+        
         table{
             width: 50%;
         }
     }
+}
+
+.sobre{
+    height:100vh;
 }
 
 .icons tr img{

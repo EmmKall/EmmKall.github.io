@@ -26,15 +26,8 @@
                 <li class="nav-item">
                   <a class="nav-link active fc-w" aria-current="page" href="#sobre">Sobre mi</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle fc-w" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portafolio</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#fontend">Frontend</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#backend">Backend</a></li>
-                    <!-- <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                  </ul>
+                <li class="nav-item">
+                  <a class="nav-link active fc-w" aria-current="page" href="#potafolio">Proyectos</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link disabled fc-w" href="#" tabindex="-1" aria-disabled="true">Blog</a>
@@ -49,7 +42,15 @@
             <h3 class="text-center py-3 rounded-3 bg-dark"><i class="px-2 rounded-2 bi bi-terminal"></i><span>EmmanuelCal: ~</span> Programador-Web </h3>
             <p class="h4 pt-4 text-center">
               <a class="fc-w fs-2" target="_blank" href="https://github.com/EmmKall"><span class="px-2 py-1 rounded-circle bg-dark"><i class="fab fa-github"></i></span></a>
-              <a class="fc-w fs-2" target="_blank" href="https://www.linkedin.com/in/emm-cal"><span class="px-2 py-1 rounded-circle bg-primary"><i class="fas fa-eye"></i></span></a>
+              <a class="fc-w fs-2" target="_blank" href="https://www.linkedin.com/in/emm-cal"><span class="px-2 py-1 rounded-circle bg-primary"><i class="fab fa-linkedin"></i></span></a>
+              <div class="row d-flex justify-content-around">
+                <div class="alert bg-light text-center col-3 my-1">
+                  <a href="build/docs/CV-ECL_ES_06.pdf" target="_blank" class="p-1 rounded-circle mx-1 fs-3"><i class="fas fa-file-pdf"></i></a>CV Español
+                </div>
+                <div class="alert bg-dark text-light text-center col-3 my-1">
+                  <a href="build/docs/CV-ECL_EN_06.pdf" target="_blank" class="p-1 rounded-circle mx-1 fs-3"><i class="far fa-file-pdf"></i></a>CV English
+                </div>
+              </div>
             </p>
           </div>
         </div>
@@ -57,83 +58,75 @@
 
     <main class="about">
 
-      <section id="sobre">
+      <section id="sobre" class="sobre d-flex flex-column justify-content-around align-content-center">
         
-        <div class="container py-3 d-flex justify-content-center align-content-center">
-          <div class="card col-8 bg-dark">
+        <div class="py-3 d-flex justify-content-center align-content-center">
+          <div class="card col-12 col-lg-8 bg-dark">
             <div class="card-body mt-0">
               <h2 class="card-title h2 text-center py-2 fs-1 fc-w fw-bold bg-primary rounded-3">Sobre Mi</h2>
-              <h4 class="card-text text-center fc-w">Persona organizada y con una gran motivación, con una capacidad de adaptación a diferentes circunstancia y dar siempre lo mejor en cualquier proyecto, siempre me esfuerzo por aportar lo mejor y trabajar en equipo.</h4>
+              <h4 class="card-text text-center fs-5 fc-w">Persona organizada y con una gran motivación, con una capacidad de adaptación a diferentes circunstancia y dar siempre lo mejor en cualquier proyecto, siempre me esfuerzo por aportar lo mejor y trabajar en equipo.</h4>
             </div>
           </div>
         </div>
 
-        <table class="my-3 container table table-dark table-striped table-borderless">
-          <thead>
-            <tr>
-              <td></td>
-              <td class="fw-bold fs-4">Tecnólogia</td>
-            </tr>
-          </thead>
-
-          <tbody class="icons">
-            <tr>
-              <td class="fw-bolder">Frontend</td>
-              <td>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="bi bi-bootstrap-fill"></i>
-                <i class="fab fa-sass"></i>
-                <i class="fab fa-js-square"></i>
-                <img src="build/icon/jquery.svg" alt="tecnologia">
-                <i class="fab fa-angular"></i>
-              </td>
-            </tr>
-            <tr>
-              <td class="fw-bolder">Backend</td>
-              <td>
-                <i class="fab fa-php"></i>
-                <i class="fab fa-laravel"></i>
-                <img src="build/icon/mysql.svg" alt="tegnologia">
-              </td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>
-                <i class="fab fa-git"></i>
-                <i class="fab fa-github-square"></i>
-                <i class="fab fa-gitlab"></i>
-                <i class="fab fa-docker"></i>
-                <img src="build/icon/npm.svg" alt="tegnologia">
-                <img src="build/icon/composer.svg" alt="tegnologia">
-              </td>
-            </tr>
-          </tbody>
-
-          <tfooter>
-            <tr>
-              <td></td>
-              <td class="fw-bold fs-4">Tecnólogia</td>
-            </tr>
-          </tfooter>
-        </table>
+        <div class="d-flex justify-content-center">
+          <table class="text-center table table-hover table-dark table-striped table-borderless">
+            <thead>
+              <tr>
+                <td class="fw-bold fs-4">Tecnólogia</td>
+              </tr>
+            </thead>
+  
+            <tbody class="icons">
+              <tr>
+                <td>
+                  <i class="fab fa-html5 mx-1"></i>
+                  <i class="fab fa-css3-alt mx-1"></i>
+                  <i class="bi bi-bootstrap-fill mx-1"></i>
+                  <i class="fab fa-sass mx-1"></i>
+                  <i class="fab fa-js-square mx-1"></i>
+                  <img src="build/icon/jquery.svg" class="mx-1" alt="tecnologia">
+                  <i class="fab fa-angular mx-1"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i class="fab fa-php mx-1"></i>
+                  <i class="fab fa-laravel mx-1"></i>
+                  <img src="build/icon/mysql.svg" class="mx-1" alt="tegnologia">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i class="fab fa-git mx-1"></i>
+                  <i class="fab fa-github-square mx-1"></i>
+                  <i class="fab fa-gitlab mx-1"></i>
+                  <i class="fab fa-docker mx-1"></i>
+                  <img src="build/icon/npm.svg" class="mx-1" alt="tegnologia">
+                  <img src="build/icon/composer.svg" class="mx-1" alt="tegnologia">
+                </td>
+              </tr>
+            </tbody>
+  
+          </table>
+        </div>
 
       </section>
 
-      <section class="portafolio">
-        <div class="container py-3 d-flex justify-content-center">
-          <div class="col-8 card bg-dark">
-            <div class="card-body">
-              <h2 class="card-title my-0 h2 text-center py-3 bg-primary fc-w rounded-3">Portafolio</h2>
-              <p class="card-text fs-4 text-center fc-w">Ultimos proyectos realizados, aplicando las tecnologias.</p>
+      <section id="potafolio" class="portafolio d-flex flex-column justify-content-around align-content-center">
+
+        <div class="py-3 d-flex justify-content-center">
+          <div class="card bg-dark">
+            <div class="card-body my-3">
+              <h2 class="card-title my-0 h2 text-center py-2 bg-primary fc-w rounded-3">Portafolio</h2>
+              <p class="card-text fs-5 text-center fc-w">Ultimos proyectos realizados, aplicando las tecnologias.</p>
             </div>
           </div>
         </div>
-        <div class="full mt-3 d-flex justify-content-center align-content-center">
-          <div class="full-content col-sm-10 rounded-3 d-flex justify-content-center align-content-center">
 
-            <div id="carouselExampleControls" class="carousel slide col-8" data-bs-ride="carousel">
-              <div class="carousel-inner">
+        <div class="full-content rounded-3 col-6 offset-3">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
 
                 <div class="carousel-item active">
                   <div class="card bg-dark border-light rounded-3 d-flex justify-content-center align-content-center">
@@ -146,7 +139,7 @@
                       <h4 class="card-title h3 text-center bg-primary rounded-2 py-1 fc-w">Proyecto</h4>
                       <p class="card-text text-center fc-w">Proyecto descripción</p>
                       
-                      <div class="info border border-light border-2 py-3 rounded-3 d-flex justify-content-around align-content-center">
+                      <div class="info border border-light border-2 p-3 rounded-3 d-flex justify-content-around align-content-center">
                         <i class="fab fa-html5 icons"></i>
                         <i class="fab fa-css3-alt icons"></i>
                         <i class="fab fa-php icons"></i>
@@ -171,7 +164,7 @@
                       <h4 class="card-title h3 text-center bg-primary rounded-2 py-1 fc-w">Proyecto</h4>
                       <p class="card-text text-center fc-w">Proyecto descripción</p>
                       
-                      <div class="info border border-light border-2 py-3 rounded-3 d-flex justify-content-around align-content-center">
+                      <div class="info border border-light border-2 p-3 rounded-3 d-flex justify-content-around align-content-center">
                         <i class="fab fa-html5 icons"></i>
                         <i class="fab fa-css3-alt icons"></i>
                         <i class="fab fa-php icons"></i>
@@ -196,7 +189,7 @@
                       <h4 class="card-title h3 text-center bg-primary rounded-2 py-1 fc-w">Proyecto</h4>
                       <p class="card-text text-center fc-w">Proyecto descripción</p>
                       
-                      <div class="info border border-light border-2 py-3 rounded-3 d-flex justify-content-around align-content-center">
+                      <div class="info border border-light border-2 p-3 rounded-3 d-flex justify-content-around align-content-center">
                         <i class="fab fa-html5 icons px-1"></i>
                         <i class="fab fa-css3-alt icons px-1"></i>
                         <i class="fab fa-php icons px-1"></i>
@@ -210,17 +203,15 @@
                   </div>
                 </div>
 
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-
+            </button>
           </div>
         </div>
 
