@@ -1,7 +1,7 @@
 .portafolio{
     width: 100%;
-    height: 150vh;
-    background-image: radial-gradient(circle at 50% 50%, rgba(102, 226, 195, 0.534) 0, rgba(89, 209, 187, 0.521) 12.5%, rgba(79, 190, 179, 0.527) 25%, rgba(72, 169, 164, 0.507) 37.5%, #449292 50%, #417b7f 62.5%, #3e686c 75%, #3b575c 87.5%, #38494d 100%), url(../img/wall01.webp);
+    height: 100vh;
+    background-image: radial-gradient(circle at 50% 50%, rgba(102, 226, 195, 0.534) 0, rgba(89, 209, 187, 0.521) 12.5%, rgba(79, 190, 179, 0.527) 25%, rgba(72, 169, 164, 0.507) 37.5%, #449292 50%, #417b7f 62.5%, #3e686c 75%, #3b575c 87.5%, #38494d 100%)/* , url(../img/wall01.webp) */;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -15,17 +15,14 @@
 .full {
 
     @include pc{
-        @include grid(2, 2rem);
+        @include grid(1, 2rem);
     }
 }
 
 .full-content{
-    padding: 2rem;
-    background-repeat: no-repeat;
-    height: 50vh;
 
     .icons{
-        font-size: 2rem;
+        font-size: 2.5rem;
         width:5rem;
     }
 }
@@ -33,26 +30,10 @@
 .img-full{
     @include pc{
         margin: 0 auto;
-        width: 20rem;
+        width: 25rem;
     }
 }
 
 .info{
-    background: rgba(2, 49, 119, 0.7);    
-}
-
-.frontend{
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2, 0, 36, 0.356) 0%, rgba(47, 113, 131, 0.377) 33%, rgba(0, 213, 255, 0.356) 100%), url(../img/frontend.webp);
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.backend{
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2, 0, 36, 0.356) 0%, rgba(47, 113, 131, 0.377) 33%, rgba(0, 213, 255, 0.356) 100%), url(../img/backend.webp);
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+    background: rgba(0, 0, 0, 0.507);
 }
