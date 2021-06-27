@@ -4,25 +4,23 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
-    height: 110vh;
+    height: 100vh;
     table{width: 90%;}
 
     @include pc{
-        
         table{
             width: 50%;
         }
     }
 }
 
-.sobre{
-    height:100vh;
-}
-
 .icons tr img{
-    width: 5rem;
-    margin: auto;
+    width: 3rem;
+    @include pc{
+        &{
+            font-size:5rem;
+        }
+    }
 }
 
 .icons tr i{font-size: 3rem;}
@@ -41,4 +39,6 @@
 .fa-git, .fa-gitlab{color: #d15b0c;}
 .fa-github-square{
     color: $black-color;
-    background: $white-color;}
+    background: $white-color;
+    border-radius: 0.5rem;
+}
