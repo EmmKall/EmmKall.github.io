@@ -1,98 +1,67 @@
-'use strict'
-
-const { series, parallel, src, dest, watch } = require('gulp');
-
+const { src, dest, watch , parallel } = require('gulp');
 const sass = require('gulp-sass');
-const cssmin = require('gulp-cssmin');
-
-const sourcemaps = require('gulp-sourcemaps');
-const wrapJS = require('gulp-wrap-js');
-
+const autoprefixer = require('autoprefixer');
+const postcss    = require('gulp-postcss')
+const sourcemaps = require('gulp-sourcemaps')
+const cssnano = require('cssnano');
+const concat = require('gulp-concat');
+const terser = require('gulp-terser-js');
+const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
+const notify = require('gulp-notify');
+const cache = require('gulp-cache');
 const webp = require('gulp-webp');
 
-const concat = require('gulp-concat');
-const rename = require('gulp-rename');
-const minify = require('minify');
-
-
-const path = {
-    scss: 'src/scss/app.scss',
-    css:  'build/css',
-     img: 'src/img/**/*',
-    imgD: 'build/img',
-      js: 'src/js/**/*',
-     jsc: 'build/js'
+// Variables de rutas y constantes
+const paths = {
+    scss: 'src/scss/**/*.scss',
+    js: 'src/js/**/*.js',
+    imagenes: 'src/img/**/*'
 }
 
-const opciones = {
-    html: {
-        removeAttributeQuotes: false,
-    },   
-    css: {
-        compatibility: '*',
-    },
-    js: {
-        ecma: 6,
-    },
-    img: {
-        maxSize: 4096,
-    }
+// css es una función que se puede llamar automaticamente
+function css() {
+    return src(paths.scss)
+        .pipe(sourcemaps.init())
+        .pipe(sass())
+        .pipe(postcss([autoprefixer(), cssnano()]))
+        // .pipe(postcss([autoprefixer()]))
+        .pipe(sourcemaps.write('.'))
+        .pipe( dest('./build/css') );
 }
 
 
-function hola( done )
-{
-    console.log("Hola desde gulpfile");
-    done();
+function javascript() {
+    return src(paths.js)
+      .pipe(sourcemaps.init())
+      .pipe(concat('bundle.js')) // final output file name
+      .pipe(terser())
+      .pipe(sourcemaps.write('.'))
+      .pipe(rename({ suffix: '.min' }))
+      .pipe(dest('./build/js'))
 }
 
-function minScss(  )
-{
-    return src(path.scss)
-    .pipe( sass({
-        outputStyle: 'expanded' //comprese -> mincss
-    }) )
-    .pipe( dest(path.css) )
-    .pipe( cssmin() )
-    .pipe( rename({suffix: '.min'}) )
-    .pipe( dest(path.css) )
+function imagenes() {
+    return src(paths.imagenes)
+        .pipe(cache(imagemin({ optimizationLevel: 3})))
+        .pipe(dest('build/img'))
+        .pipe(notify({ message: 'Imagen Completada'}));
 }
 
-function minJs( )
-{
-    return src( path.js )
-    .pipe( concat('app.js') )
-    .pipe( dest( path.jsc ) )
-
-    
+function versionWebp() {
+    return src(paths.imagenes)
+        .pipe( webp() )
+        .pipe(dest('build/img'))
+        .pipe(notify({ message: 'Imagen Completada'}));
 }
 
-function minHtml( done )
-{
-    console.log("Minificando HTML");
-    done();
+function watchArchivos() {
+    watch( paths.scss, css );
+    watch( paths.js, javascript );
+    watch( paths.imagenes, imagenes );
+    watch( paths.imagenes, versionWebp );
 }
-
-function img()
-{
-    return src( path.img )
-    .pipe( imagemin() )
-    .pipe( dest( path.imgD ) )
-    .pipe( webp() )
-    .pipe( dest( path.imgD ) )
-}
-
-function verArchivos()
-{
-    watch('src/scss/**/*.scss', minScss);
-    watch(path.js, minJs);
-}
-
-exports.hola = hola;
-exports.minScss = minScss;
-exports.minJs = minJs;
-exports.minHtml = minHtml;
-exports.img = img;
-exports.verArchivos = verArchivos;
-exports.default = parallel(hola, minScss, minJs, img, minHtml, verArchivos);
+  
+exports.css = css;
+exports.watchArchivos = watchArchivos;
+exports.default = parallel(css, javascript,  imagenes, versionWebp, watchArchivos ); 
