@@ -1,4 +1,10 @@
 /* @import 'carpeta/archivo'; */
 
+/* Globals */
+@import 'bases/variables';
+@import 'bases/normalize';
+@import 'bases/globales';
+@import 'bases/mixins';
+
 /* Sections */
 @import 'sections/header';

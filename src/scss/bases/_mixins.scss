@@ -1,0 +1,21 @@
+@mixin phone
+{
+    @media (min-width: 768px)
+    {
+        @content;
+    }    
+}
+
+@mixin pc
+{
+    @media (min-width: 992px)
+    {
+        @content;
+    }
+}
+
+@mixin grid($columns, $separacion){
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-gap: $separacion;
+}
