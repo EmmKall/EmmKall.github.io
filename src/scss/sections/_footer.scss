@@ -1,0 +1,28 @@
+.footer{
+    background: $blue-color;
+    width: 100%;
+    margin: 0 auto;
+
+    p a{text-decoration: none;}
+}
+
+.footer-img{
+    margin: 0 auto;
+    width: 75%;
+    @include pc{
+        width: 40%;
+    }
+}
+.icon-footer{
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    
+}
+.fa-whatsapp{
+    color: $white-color;
+    background: #22cd43;
+}
+.fa-telegram{
+    background: lighten($color: $blue-color, $amount: 50);
+    color: #269ed1;
+}

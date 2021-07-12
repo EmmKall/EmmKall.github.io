@@ -19,10 +19,12 @@
     p{
         margin: 0;
     }
+    a{text-decoration: none;}
 }
 
 .aptitudes{
     background: $blue-color;
+    padding: 2rem 0;
     .row{
         margin: 0 auto;
     }
