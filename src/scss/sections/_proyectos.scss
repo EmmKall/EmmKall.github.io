@@ -1,0 +1,15 @@
+.proyectos{
+    .row{margin: 0 auto;}
+    h2{color: $blue-color;}
+}
+
+.proyecto{
+    p{margin: auto 0;}
+}
+
+.botones a{
+    font-size: 2rem;
+    color: $black-color;
+    text-decoration: none;
+    cursor: pointer;
+}

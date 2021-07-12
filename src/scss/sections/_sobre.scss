@@ -37,7 +37,17 @@
 
     i{
         color: $white-color;
-        font-size: 3rem;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    img{
+        width: 50%;
+    }
+
+    @include pc{
+        i{font-size: 3rem;}
+        img{width: 75%;}
     }
 }
 
