@@ -4,8 +4,11 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height:30rem;
+    height:20rem;
     width: 100%;
+    @include pc{
+        height: 30rem;
+    }
 }
 
 .logo{

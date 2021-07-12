@@ -1,0 +1,55 @@
+.sobre{
+    h2{
+        color: $blue-color;
+    }
+}
+
+.sobre-redes{
+    font-size: 3rem;
+}
+
+.fa-linkedin{
+    color: $linkedin;
+}
+.fa-github-square{
+    color: $black-color;
+}
+
+.sobre-datos{
+    p{
+        margin: 0;
+    }
+}
+
+.aptitudes{
+    background: $blue-color;
+    .row{
+        margin: 0 auto;
+    }
+}
+
+.aptitud{
+    border-radius: 1rem;
+    width: 100%;
+    height: 5rem;
+    margin: 1rem auto;
+    background: $white-color;
+
+    i{
+        color: $white-color;
+        font-size: 3rem;
+    }
+}
+
+.bootstrap{background: $bootstrap;}
+.sass{background: $sass;}
+.js{background: $js;}
+.npm{background: $npm;}
+.angular{background: $angular;}
+.mysql{background: $mysql;}
+.php{background: $php;}
+.laravel{background: $laravel;}
+.composer{background: $composer;}
+.docker{background: $docker;}
+.git{background: $git;}
+.github{background: $black-color;}
