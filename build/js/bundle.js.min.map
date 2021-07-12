@@ -1,1 +1,1 @@
-{"version":3,"sources":["app.js"],"names":["document","addEventListener","console","log"],"mappings":"AACAA,SAAAC,iBAAA,mBAAA,KACAC,QAAAC,IAAA","file":"bundle.js","sourcesContent":["\r\ndocument.addEventListener('DOMContentLoaded', () => {\r\n    console.log(\"Hola\");\r\n});"]}
+{"version":3,"sources":["app.js"],"names":["document","addEventListener"],"mappings":"AACAA,SAAAC,iBAAA,mBAAA","file":"bundle.js","sourcesContent":["\r\ndocument.addEventListener('DOMContentLoaded', () => {\r\n    /* console.log(\"Hola\"); */\r\n});"]}
