@@ -11,334 +11,144 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">EmmKall Dev</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#sobre">Sobre mi</a>
-              <a class="nav-link active" aria-current="page" href="#proyectos">Proyectos</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+    
 
-    <header class="header d-flex flex-column justify-content-center align-items-center">
-        <div class="logo">
-            <picture class="logo-img">
-                <source src="build/img/LOGO.webp" alt="logo" type="image/webp">
-                <source src="build/img/LOGO.png" alt="logo" type="image/png">
-                <img src="build/img/LOGO.png" alt="logo">
-            </picture>
-        </div>
-        <div class="datos text-white fw-bold">
-            <h4 class="h3 text-center my-3">Emmanuel Calderón</h4>
-            <p class="text-center h5 my-3">Programador Web</p>
+    <header class="header">
+        <nav class="nav">
+            <div class="container d-flex justify-content-between">
+                <div class="img-nav">
+                    <picture>
+                        <source src="build/img/LOGO_White.webp" type="image/webp">
+                        <source src="build/img/LOGO_White.png" type="image/png">
+                        <a href="/"><img src="build/img/LOGO_White.png" alt="Logo"></a>
+                    </picture> 
+                </div>
+                <div class="nav-items d-flex justify-content-between align-items-center">
+                    <p class="text-white text-center">Sobre Mi</p>
+                    <p class="text-white text-center">Proyectos</p>
+                </div>
+            </div>
+        </nav>
+        <div class="header-titulo d-flex justify-content-center align-items-center">
+            <h2 class="h1 text-center text-white my-3 py-3">Bienvenido a mi portafolio,<br> Soy Emmanuel Calderón</h2>
         </div>
     </header>
 
-    <div class="sobre container my-3">
-        <h2 class="text-center fw-bold">Sobre mi</h2>
-        <div class="sobre-redes d-flex justify-content-evenly">
-            <a target="_blank" href="https://www.linkedin.com/in/emm-cal/"><i class="fab fa-linkedin"></i></a>
-            <a target="_blank" href="https://github.com/EmmKall"><i class="fab fa-github-square"></i></a>
-        </div>
-        <div class="sobre-datos my-3">
-            <p class="text-center fs-4 fw-bold">Mi nombre es Emmanuel Calderón y soy Programador Web</p>
-            <p class="text-center fs-4">Soy una persona organizada, con una gran motivación por la programación.</p>
-            <p class="text-center fs-4">Trabajo bajo presión, en equipo, autodidacta y enfocada a resultados.</p>
-            <p class="text-center fs-4">Descarga mi curriculum vitae: <a class="fw-bold text-primary" target="_blank" href="build/cv/CV_EmmanuelCalderon_ES.pdf"><i class="far fa-file-pdf"></i> Español</a> o <a target="_blank" class="fw-bold text-primary" href="build/cv/CV_EmmanuelCalderon_EN.pdf"><i class="far fa-file-pdf"></i> English</a>  </p>
-        </div>
-    </div>
+    <div class="about-me">
+        <h2 class="text-center h1 my-3">Sobre Mi</h2>
 
-    <div class="aptitudes">
-        <h3 class="h2 text-center text-white my-3 py-2">Aptitudes Técnicas</h3>
-        <div class="row container d-flex justify-content-between align-items-center">
-            <div class="col-4 col-sm-2 col-lg-1">
-                <div class="aptitud bootstrap d-flex justify-content-center align-items-center">
-                    <i class="fab fa-bootstrap"></i>
+        <div class="contanier row">
+            <div class="col-12 col-md-8 about-me-content text-center">
+                <p>Mi nombre es Emmanuel, programador web, soy de México</p>
+                <p>Soy una persona autodidacta, responsable, me gusta trabajar en equipo y algunas veces independiente, aunque disfruto más trabajar en un equipo</p>
+                <p>Soy una persona enfocada a resultados, con una gran motivación y gusto por la programación.</p>
+                <p>Consula mi Curriculum vitae, <span ><a target="_blank" href="/build//cv/CV_EmmanuelCalderon_ES.pdf">Español</a></span> o  <span><a target="_blank" href="/build/cv/CV_EmmanuelCalderon_EN.pdf">Ingles</a></span></p>
+                <div class="about-icons d-flex justify-content-evenly">
+                    <p><a target="_blank" href="https://www.linkedin.com/in/emm-cal/"><i class="fab fa-linkedin"></i></a></p>
+                    <p><a target="_blank" href="https://github.com/EmmKall"><i class="fab fa-github-square"></i></a></p>
+                    <p><a target="_blank" href="mailto:ing.emmanuel.cal@gmail.com"><i class="fas fa-envelope"></i></a></p>
+                    <p><a target="_blank" href="https://api.whatsapp.com/send?phone=525585357445&text=Hola%20Emmanuel%20"><i class="fab fa-whatsapp-square"></i></a></p>
+                    <p><a target="_blank" href="https://t.me/EmmKall"><i class="fab fa-telegram-plane"></i></a></p>
                 </div>
             </div>
-            <div class="col-4 col-sm-2 col-lg-1">
-                <div class="aptitud sass d-flex justify-content-center align-items-center">
-                    <i class="fab fa-sass"></i>
-                </div>
-            </div>
-            <div class="col-4 col-sm-2 col-lg-1">
-                <div class="aptitud js d-flex justify-content-center align-items-center">
-                    <i class="fab fa-js-square"></i>
-                </div>
-            </div>
-            <div class="col-4 col-sm-2 col-lg-1">
-                <div class="aptitud npm d-flex justify-content-center align-items-center">
-                    <i class="fab fa-npm"></i>
-                </div>
-            </div>
-            <div class="col-4 col-sm-2 col-lg-1">
-                <div class="aptitud angular d-flex justify-content-center align-items-center">
-                    <i class="fab fa-angular"></i>
-                </div>
-            </div>
-            <div class="col-4 col-sm-2 col-lg-1">
-                <div class="aptitud mysql d-flex justify-content-center align-items-center">
-                    <img src="build/icons/mysql.svg" alt="">
-                </div>
-            </div>
-            <div class="col-4 col-sm-2 col-lg-1">
-                <div class="aptitud php d-flex justify-content-center align-items-center">
-                    <i class="fab fa-php"></i>
-                </div>
-            </div>
-            <div class="col-4 col-sm-2 col-lg-1">
-                <div class="aptitud laravel d-flex justify-content-center align-items-center">
-                    <i class="fab fa-laravel"></i>
-                </div>
-            </div>
-            <div class="col-4 col-sm-2 col-lg-1">
-                <div class="aptitud composer d-flex justify-content-center align-items-center">
-                    <img src="build/icons/composer.svg" alt="">
-                </div>
-            </div>
-            <div class="col-4 col-sm-2 col-lg-1">
-                <div class="aptitud docker d-flex justify-content-center align-items-center">
-                    <i class="fab fa-docker"></i>
-                </div>
-            </div>
-            <div class="col-4 col-sm-2 col-lg-1">
-                <div class="aptitud git d-flex justify-content-center align-items-center">
-                    <i class="fab fa-git"></i>
-                </div>
-            </div>
-            <div class="col-4 col-sm-2 col-lg-1">
-                <div class="aptitud github d-flex justify-content-center align-items-center">
-                    <i class="fab fa-github-square"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="proyectos my-3">
-        <h2 class="h2 text-center py-3 fw-bolder">Proyectos</h2>
-        <div class="row container d-flex justify-content-center align-items-center">
-            <div class="col-6 col-lg-3 my-2">
-                <div class="proyecto card p-1">
-                    <picture class="rounded rounded-3">
-                        <source src="build/img/proy/citasveterinario.webp" type="image/webp">
-                        <source src="build/img/proy/citasveterinario.jpg" type="image/jpg">
-                        <img src="build/img/proy/citasveterinario.webp" class="card-img-top"  alt="proyecto">
-                    </picture>
-                    <div class="card-body text-white">
-                        <h4 class="h5 text-center">Administrador de Citas</h4>
-                        <p class="text-center"> JS/HTML5/CSS3 </p>
-                        <p class="text-center">Administrador de citas para una veterinaria, agregar, editar y eliminar citas.</p>
-                        <div class="botones fs-3 d-flex justify-content-evenly align-items-center">
-                            <a target="_blank" href="https://control-citas-veterinaria.netlify.app"><i class="fas fa-eye"></i></a>
-                            <a target="_blank" href="https://github.com/EmmKall/JSCitasVeterinario"><i class="fab fa-github-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6 col-lg-3 my-2">
-                <div class="proyecto card p-1">
-                    <picture class="rounded rounded-3">
-                        <source src="build/img/proy/filtrocarros.webp" type="image/webp">
-                        <source src="build/img/proy/filtrocarros.webp" type="image/jpg">
-                        <img src="build/img/proy/filtrocarros.webp" class="card-img-top"  alt="proyecto">
-                    </picture>
-                    <div class="card-body text-white">
-                        <h4 class="h5 text-center">Filtro de carros</h4>
-                        <p class="text-center">JS/CSS3/HTML5</p>
-                        <p class="text-center">Filtro de carros, por sus caracteristicas.</p>
-                        <div class="botones fs-3 d-flex justify-content-evenly align-items-center">
-                            <a target="_blank" href="https://filtro-carros.netlify.app"><i class="fas fa-eye"></i></a>
-                            <a target="_blank" href="https://github.com/EmmKall/JSFIltro"><i class="fab fa-github-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6 col-lg-3 my-2">
-                <div class="proyecto card p-1">
-                    <picture class="rounded rounded-3">
-                        <source src="build/img/proy/crm.webp" type="image/webp">
-                        <source src="build/img/proy/crm.JPG" type="image/jpg">
-                        <img src="build/img/proy/crm.webp" class="card-img-top"  alt="proyecto">
-                    </picture>
-                    <div class="card-body text-white">
-                        <h4 class="h5 text-center">CRM con IndexedDB</h4>
-                        <p class="text-center">JS, CSS, Tailwind</p>
-                        <p class="text-center">CRUD de lista de clientes, con base de datos (IndexedDB).</p>
-                        <div class="botones fs-3 d-flex justify-content-evenly align-items-center">
-                            <a target="_blank" href="https://crm-indexed.netlify.app/index.html"><i class="fas fa-eye"></i></a>
-                            <a target="_blank" href="https://github.com/EmmKall/CRM-IndexedDB-Clientes"><i class="fab fa-github-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6 col-lg-3 my-2">
-                <div class="proyecto card p-1">
-                    <picture class="rounded rounded-3">
-                        <source src="build/img/proy/proy04.webp" type="image/webp">
-                        <source src="build/img/proy/proy04.webp" type="image/jpg">
-                        <img src="build/img/proy/proy04.webp" class="card-img-top"  alt="proyecto">
-                    </picture>
-                    <div class="card-body text-white">
-                        <h4 class="h5 text-center">Proyecto</h4>
-                        <p class="text-center">Tecnologías</p>
-                        <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        <div class="botones fs-3 d-flex justify-content-evenly align-items-center">
-                            <a target="_blank" href="#"><i class="fas fa-eye"></i></a>
-                            <a target="_blank" href="#"><i class="fab fa-github-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6 col-lg-3 my-2">
-                <div class="proyecto card p-1">
-                    <picture class="rounded rounded-3">
-                        <source src="build/img/proy/proy05.webp" type="image/webp">
-                        <source src="build/img/proy/proy05.webp" type="image/jpg">
-                        <img src="build/img/proy/proy05.webp" class="card-img-top"  alt="proyecto">
-                    </picture>
-                    <div class="card-body text-white">
-                        <h4 class="h5 text-center">Proyecto</h4>
-                        <p class="text-center">Tecnologías</p>
-                        <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        <div class="botones fs-3 d-flex justify-content-evenly align-items-center">
-                            <a target="_blank" href="#"><i class="fas fa-eye"></i></a>
-                            <a target="_blank" href="#"><i class="fab fa-github-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6 col-lg-3 my-2">
-                <div class="proyecto card p-1">
-                    <picture class="rounded rounded-3">
-                        <source src="build/img/proy/proy06.webp" type="image/webp">
-                        <source src="build/img/proy/proy06.webp" type="image/jpg">
-                        <img src="build/img/proy/proy06.webp" class="card-img-top"  alt="proyecto">
-                    </picture>
-                    <div class="card-body text-white">
-                        <h4 class="h5 text-center">Proyecto</h4>
-                        <p class="text-center">Tecnologías</p>
-                        <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        <div class="botones fs-3 d-flex justify-content-evenly align-items-center">
-                            <a target="_blank" href="#"><i class="fas fa-eye"></i></a>
-                            <a target="_blank" href="#"><i class="fab fa-github-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6 col-lg-3 my-2">
-                <div class="proyecto card p-1">
-                    <picture class="rounded rounded-3">
-                        <source src="build/img/proy/proy07.webp" type="image/webp">
-                        <source src="build/img/proy/proy07.webp" type="image/jpg">
-                        <img src="build/img/proy/proy07.webp" class="card-img-top"  alt="proyecto">
-                    </picture>
-                    <div class="card-body text-white">
-                        <h4 class="h5 text-center">Proyecto</h4>
-                        <p class="text-center">Tecnologías</p>
-                        <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        <div class="botones fs-3 d-flex justify-content-evenly align-items-center">
-                            <a target="_blank" href="#"><i class="fas fa-eye"></i></a>
-                            <a target="_blank" href="#"><i class="fab fa-github-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6 col-lg-3 my-2">
-                <div class="proyecto card p-1">
-                    <picture class="rounded rounded-3">
-                        <source src="build/img/proy/proy08.webp" type="image/webp">
-                        <source src="build/img/proy/proy08.webp" type="image/jpg">
-                        <img src="build/img/proy/proy08.webp" class="card-img-top"  alt="proyecto">
-                    </picture>
-                    <div class="card-body text-white">
-                        <h4 class="h5 text-center">Proyecto</h4>
-                        <p class="text-center">Tecnologías</p>
-                        <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        <div class="botones fs-3 d-flex justify-content-evenly align-items-center">
-                            <a target="_blank" href="#"><i class="fas fa-eye"></i></a>
-                            <a target="_blank" href="#"><i class="fab fa-github-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="challenge">
-        <h3 class="h1 text-center text-white my-3 py-1 border-bottom">Design Challenge</h3>
-        
-        <div class="row d-flex justify-content-between align-items-center">
-            
-            <div class="col-6 col-sm-3 card my-3">
-                <picture class="m-2">
-                    <source src="build/img/jsch/jsch01.webp" as="image/webp">
-                    <source src="build/img/jsch/jsch01.jpg" as="image/jpg">
-                    <img class="card-img-top" src="build/img/jsch/jsch01.webp" alt="Item">
+            <div class="col-12 col-md-4 about-me-img">
+                <picture class="img-responsive">
+                    <source src="build/img/about.webp" type="image/webp">
+                    <source src="build/img/about.jpg" type="image/jpg">
+                    <img class="" src="build/img//about.webp" alt="Sobre Mi">
                 </picture>
-                <div class="card-body">
-                  <h5 class="card-title">Diseño de Card</h5>
-                  <p class="card-text">Challenge from Frontend Mentor, Card design.</p>
-                  <p class="card-text">From: <a href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62">Challenge</a> </p>
-                  <a href="https://emmdev-jschallenge-card.netlify.app" target="_blank" class="btn btn-primary"><i class="far fa-eye"></i> Visit card</a>
-                  <a href="https://github.com/EmmKall/JSChallenge-card" target="_blank" class="btn btn-dark"><i class="fab fa-github-alt"></i></a>
-                </div>
             </div>
-            
-            <div class="col-6 col-sm-3 card my-3">
-                <picture class="m-2">
-                    <source src="build/img/jsch/jsch02.webp" as="image/webp">
-                    <source src="build/img/jsch/jsch02.jpg" as="image/jpg">
-                    <img class="card-img-top" src="build/img/jsch/jsch02.webp" alt="Item">
+        </div>
+    </div>
+
+    <main class="projects">
+        <h2 class="h1 text-center py-3 text-white">Mis Proyectos</h2>
+        <p class="text-center my-3">Estos son los ultimos proyectos personales realizados, los cuales he aplicado los conocimientos adquiridos durante mi tiempo de aprendizaje.</p>
+        <div class="container projects-items">
+
+            <div class="card my-2">
+                <picture>
+                    <source src="/build/img/proy/crm.webp" type="image/webp">
+                    <source src="/build/img/proy/crm.jpg" type="image/jpg">
+                    <img class="card-img-top" src="/build/img/proy/crm.webp" alt="">
                 </picture>
-                <div class="card-body">
-                  <h5 class="card-title">Diseño de Card</h5>
-                  <p class="card-text">Challenge from Frontend Mentor, Card design.</p>
-                  <p class="card-text">From: <a href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62">Challenge</a> </p>
-                  <a href="https://cards-challange.netlify.app" target="_blank" class="btn btn-primary"><i class="far fa-eye"></i> Visit card</a>
-                  <a href="https://github.com/EmmKall/CSSChallenge-Cards" target="_blank" class="btn btn-dark"><i class="fab fa-github-alt"></i></a>
+                <div class="card-body text-center text-white">
+                    <h4 class="card-tittle">Proyecto</h4>
+                    <p>Este proyecto está realizado con <span class="js">Javascript</span>, utilizando IndexedDB, para una agenda de clientes</p>
+                    <p>Tecnologias: <span class="js">Javascript</span> </p>
+                </div>
+                <div class="icons-card d-flex justify-content-evenly">
+                    <p><a target="_blank" href="https://github.com/EmmKall/CRM-IndexedDB-Clientes"><i class="fab fa-github-square"></i></a></p>
+                    <p><a target="_blank" href="https://crm-indexed.netlify.app/index.html"><i class="far fa-eye"></i></a></p>
                 </div>
             </div>
 
-            <div class="col-6 col-sm-3 card my-3">
-                <picture class="m-2">
-                    <source src="build/img/proy/landing.webp" as="image/webp">
-                    <source src="build/img/proy/landing.jpg" as="image/jpg">
-                    <img class="card-img-top" src="build/img/proy/landing.webp" alt="Item">
+            <div class="card my-2">
+                <picture>
+                    <source src="/build/img/proy/filtrocarros.webp" type="image/webp">
+                    <source src="/build/img/proy/filtrocarros.jpg" type="image/jpg">
+                    <img class="card-img-top" src="/build/img/proy/filtrocarros.webp" alt="">
                 </picture>
-                <div class="card-body">
-                  <h5 class="card-title">Diseño de Landpage</h5>
-                  <p class="card-text">Challenge from Frontend Mentor, Landpage design.</p>
-                  <p class="card-text">From: <a href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62">Challenge</a> </p>
-                  <a href="https://landpage-css-js.netlify.app" target="_blank" class="btn btn-primary"><i class="far fa-eye"></i> Visit card</a>
-                  <a href="https://github.com/EmmKall/CSS-Challange-landpage" target="_blank" class="btn btn-dark"><i class="fab fa-github-alt"></i></a>
+                <div class="card-body text-center text-white">
+                    <h4 class="card-tittle">Filtro</h4>
+                    <p>Filtro de carros, con <span class="js">Javascript</span></p>
+                    <p>Tecnologias: <span class="js">Javascript</span>
+                </div>
+                <div class="icons-card d-flex justify-content-evenly">
+                    <p><a target="_blank" href="https://github.com/EmmKall/JSFIltro"><i class="fab fa-github-square"></i></a></p>
+                    <p><a target="_blank" href="https://filtro-carros.netlify.app/"><i class="far fa-eye"></i></a></p>
+                </div>
+            </div>
+
+            <div class="card my-2">
+                <picture>
+                    <source src="/build/img/proy/citasveterinario.webp" type="image/webp">
+                    <source src="/build/img/proy/citasveterinario.jpg" type="image/jpg">
+                    <img class="card-img-top" src="/build/img/proy/citasveterinario.webp" alt="Citas Veterinaria">
+                </picture>
+                <div class="card-body text-center text-white">
+                    <h4 class="card-tittle">Citas para Veterinaria</h4>
+                    <p>CRUD con localstore, de control de citas para veterinaria, con <span class="js">Javascript</span></p>
+                    <p>Tecnologias: <span class="js">Javascript</span></p>
+                </div>
+                <div class="icons-card d-flex justify-content-evenly">
+                    <p><a target="_blank" href="https://github.com/EmmKall/JSCitasVeterinario"><i class="fab fa-github-square"></i></a></p>
+                    <p><a target="_blank" href="https://control-citas-veterinaria.netlify.app/"><i class="far fa-eye"></i></a></p>
+                </div>
+            </div>
+
+            <div class="card my-2 ">
+                <picture>
+                    <source src="/build/img/proy/proyjpg.webp" type="image/webp">
+                    <source src="/build/img/proy/proyjpg.jpg" type="image/jpg">
+                    <img class="card-img-top" src="/build/img/proy/proyjpg.webp" alt="">
+                </picture>
+                <div class="card-body text-center text-white">
+                    <h4 class="card-tittle">Proyecto</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta illo perspiciatis repellat commodi delectus?</p>
+                </div>
+                <div class="icons-card d-flex justify-content-evenly">
+                    <p><a href="/"><i class="fab fa-github-square"></i></a></p>
+                    <p><a href="/"><i class="far fa-eye"></i></a></p>
                 </div>
             </div>
 
         </div>
+    </main>
 
-    </div>
-
-    <footer class="footer d-flex flex-column justify-content-center align-items-center text-white">
-        <picture class="footer d-flex justify-content-center align-items-center">
-            <source src="build/img/LOGO_White.webp" type="image/webp">
-            <source src="build/img/LOGO_White.webp" type="image/png">
-            <img class="footer-img" src="build/img/LOGO_White.webp" alt="logo">
-        </picture>
-        <p class="fs-6 bg-info py-1 px-2 rounded-3">Correo electrónico: <a class="text-white fw-bold" href="mailto:ing.emmanuel.cal@gmail.com"><i class="fas fa-envelope-square"></i> ing.emmanuel.cal@gmail.com</a> </p>
-        <p class="fs-6 bg-info py-1 px-2 rounded-3">Teléfono: <i class="fas fa-phone-square-alt"></i> +52 1 55 8535 7445 - <a href="https://api.whatsapp.com/send?phone=525585357445&text=Hola%20Emmanuel%20%F0%9F%98%80"><i class="fab icon-footer fa-whatsapp"></i></a> - <a href="https://t.me/emmkall"><i class="fab icon-footer fa-telegram"></i></a> </p>
+    <footer class="footer d-flex justify-content-center align-items-center flex-column">
+        <div class="footer-img">
+            <picture>
+                <source src="/build/img/LOGO_White.webp" type="image/webp">
+                <source src="/build/img/LOGO_White.png" type="image/png">
+                <img src="/build/img/LOGO_White.webp" alt="Logo">
+            </picture>
+        </div>
+        <div class="footer-content text-center text-white">
+            <p>Email: <span>ing.emmanuel.cal@gmail.com</span> <a target="_blank" href="mailto:ing.emmanuel.cal@gmail.com"><i class="icon far fa-envelope-open"></i></a> </p>
+            <p>Teléfono/Whatsapp: <a target="_blank" href="https://api.whatsapp.com/send?phone=525585357445&text=Hola%20Emmanuel%20"><i class="icon fab fa-whatsapp"></i></a></p>
+            <p>Telegram: <a target="_blank" href="https://t.me/EmmKall"><i class="icon fab fa-telegram-plane"></i></a> </p>
+        </div>
     </footer>
 
 

@@ -11,6 +11,10 @@ html
     box-sizing: border-box;
 }
 
+body{
+    background: #dfdede;
+}
+
 .fc-w{
     color: $white-color;
 }
@@ -18,3 +22,9 @@ html
 .fc-b{
     color: $blue-color;
 }
+
+p, a, li{
+    font-family: 'Open Sans', sans-serif;
+}
+
+img{ width: 100%; }

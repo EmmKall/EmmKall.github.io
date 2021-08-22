@@ -1,13 +1,13 @@
 .header{
-    background: rgb(10,129,194);
-    background: linear-gradient(90deg, rgba(10,129,194,0.500437675070028) 0%, rgba(10,129,194,0.46122198879551823) 45%, rgba(0,212,255,0.4640231092436975) 100%), url('/build/img/header.webp');
+    background: $blue-color;
+    background: linear-gradient(90deg, rgba(10,129,194,0.500437675070028) 0%, rgba(10,129,194,0.46122198879551823) 45%, rgba(0, 213, 255, 0.6) 100%), url('/build/img/header.webp');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height:20rem;
+    height: 20rem;
     width: 100%;
     @include pc{
-        height: 30rem;
+        height: 35rem;
     }
 }
 
@@ -19,4 +19,47 @@
             width: 100%;
         }
     }
+}
+
+.nav{
+    background: $blue-color;
+    padding: 1rem;
+    @include pc{
+        padding: 1.5rem;
+    }
+}
+
+.img-nav{
+    width: 50%;
+    img{
+        width: 50%;
+        max-width: 20rem; 
+    }
+    @include pc{
+        width: 30%;
+        img{
+            width: 80%;
+        }
+    }
+
+}
+
+.nav-items{
+    p{
+        font-weight: bold;
+        font-size: 0.8rem;
+        margin: auto 1rem;
+
+        @include pc{
+            font-size: 1.3rem;
+        }
+        border-bottom: 0.2rem solid transparent;
+        &:hover{
+            border-bottom: 0.2rem solid $white-color;
+        }
+    }
+}
+
+.header-titulo{
+    width: 100%;
 }

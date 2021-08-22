@@ -1,6 +1,7 @@
-$blue-color: #0A81C2;
+$blue-color: #0d5d88;
 $red-color: #b91616;
 $black-color: #000000;
+$text-color: #363636;
 $white-color: #FFFFFF;
 
 $bootstrap: #572364;
@@ -15,3 +16,18 @@ $docker: #448cc3;
 $linkedin: #007bb6;
 $mysql: #2f6172;
 $git: #fe401e;
+
+$text-body: 'Open Sans', sans-serif;
+
+.js{ color: $js; }
+.sass{ color: $sass; }
+.bootstrap{ color: $bootstrap; }
+.npm{ color: $npm; }
+.angular{ color: $angular; }
+.php { color: $php; }
+.laravel { color: $laravel; }
+.composer{ color: $composer; }
+.docker{ color: $docker; }
+.mysql{ color: $mysql; }
+.git{ color: $git; }
+
