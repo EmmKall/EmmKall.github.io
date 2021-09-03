@@ -45,7 +45,9 @@
 }
 
 .nav-items{
-    p{
+    p a{
+        color: $white-color;
+        text-decoration: none;
         font-weight: bold;
         font-size: 0.8rem;
         margin: auto 1rem;
