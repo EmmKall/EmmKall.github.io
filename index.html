@@ -55,18 +55,36 @@
                 <picture class="img-responsive">
                     <source src="build/img/about.webp" type="image/webp">
                     <source src="build/img/about.jpg" type="image/jpg">
-                    <img class="" src="build/img//about.webp" alt="Sobre Mi">
+                    <img class="" srcset="build/img//about.webp" alt="Sobre Mi">
                 </picture>
             </div>
         </div>
     </div>
 
-    <main id="proyectos" class="projects">
-        <h2 class="h1 text-center py-3 text-white">Mis Proyectos</h2>
+    <main id="proyectos" class="projects d-flex justify-content-center align-items-center flex-column">
+        <h2 class="h1 text-center py-3 text-white px-3 w-full">Mis Proyectos</h2>
         <p class="text-center my-3">Estos son los ultimos proyectos personales realizados, los cuales he aplicado los conocimientos adquiridos durante mi tiempo de aprendizaje.</p>
-        <div class="container projects-items">
+        <div class="container row projects-items d-flex justify-content-evenly align-items-center">
 
-            <div class="card my-2">
+            <div class="col-12 col-md-5 card my-2">
+                <picture>
+                    <source src="/build/img/proy/Laravel-Recetas.webp" type="image/webp">
+                    <source src="/build/img/proy/Laravel-Recetas.jpg" type="image/jpg">
+                    <img class="card-img-top" src="/build/img/proy/Laravel-Recetas.webp" alt="">
+                </picture>
+                <div class="card-body text-center text-white">
+                    <h4 class="card-tittle">Red Social de Recetas</h4>
+                    <p>Este proyecto está realizado con <span class="laravel">Laravel</span>, para crear una red donde los usuarios puedan registrarse, y crear recetas para compartir, y poder compartirlas e agregarlas a favoritos, trabajando con Docker (Laradock).</p>
+                    <p>Este proyecto fue en base a un cruso, para aprender <span class="laravel">Laravel 7</span>.</p>
+                    <p>Tecnologias: <span class="laravel">Laravel</span>, <span class="vue">Vue</span> y <span class="docker">Docker</span> </p>
+                </div>
+                <div class="icons-card d-flex justify-content-evenly">
+                    <p><a target="_blank" href="https://github.com/EmmKall/Docker-Laravel-Recetas"><i class="fab fa-github-square"></i></a></p>
+                    <!-- <p><a target="_blank" href=""><i class="far fa-eye"></i></a></p> -->
+                </div>
+            </div>
+
+            <div class="col-12 col-md-5 card my-2">
                 <picture>
                     <source src="/build/img/proy/crm.webp" type="image/webp">
                     <source src="/build/img/proy/crm.jpg" type="image/jpg">
@@ -74,7 +92,7 @@
                 </picture>
                 <div class="card-body text-center text-white">
                     <h4 class="card-tittle">Agenda de Clientes</h4>
-                    <p>Este proyecto está realizado con <span class="js">Javascript</span>, utilizando IndexedDB, para una agenda de clientes</p>
+                    <p>Este proyecto está realizado con <span class="js">Javascript</span>, utilizando IndexedDB, para una agenda de clientes, un pequeño CURD</p>
                     <p>Tecnologias: <span class="js">Javascript</span> </p>
                 </div>
                 <div class="icons-card d-flex justify-content-evenly">
@@ -83,7 +101,7 @@
                 </div>
             </div>
 
-            <div class="card my-2">
+            <div class="col-12 col-md-5 card my-2">
                 <picture>
                     <source src="/build/img/proy/filtrocarros.webp" type="image/webp">
                     <source src="/build/img/proy/filtrocarros.jpg" type="image/jpg">
@@ -91,7 +109,7 @@
                 </picture>
                 <div class="card-body text-center text-white">
                     <h4 class="card-tittle">Filtro</h4>
-                    <p>Filtro de carros, con <span class="js">Javascript</span></p>
+                    <p>Filtro de carros, con <span class="js">Javascript</span>, en base a sus caracteristicas.</p>
                     <p>Tecnologias: <span class="js">Javascript</span>
                 </div>
                 <div class="icons-card d-flex justify-content-evenly">
@@ -100,7 +118,7 @@
                 </div>
             </div>
 
-            <div class="card my-2">
+            <div class="col-12 col-md-5 card my-2">
                 <picture>
                     <source src="/build/img/proy/citasveterinario.webp" type="image/webp">
                     <source src="/build/img/proy/citasveterinario.jpg" type="image/jpg">
@@ -117,7 +135,7 @@
                 </div>
             </div>
 
-            <div class="card my-2 ">
+            <div class="col-12 col-md-5 card my-2 ">
                 <picture>
                     <source src="/build/img/proy/API-Clima.webp" type="image/webp">
                     <source src="/build/img/proy/API-Clima.JPG" type="image/jpg">
@@ -125,7 +143,7 @@
                 </picture>
                 <div class="card-body text-center text-white">
                     <h4 class="card-tittle">API del Clima</h4>
-                    <p>App para consultar el clima, por ciudad y país, con <span class="js">Javascript</span></p>
+                    <p>App para consultar el clima a un API, por ciudad y país, con <span class="js">Javascript</span></p>
                     <p>Tecnólogias: <span class="js">Javascript</span></p>
                 </div>
                 <div class="icons-card d-flex justify-content-evenly">
@@ -134,7 +152,7 @@
                 </div>
             </div>
 
-            <div class="card my-2 ">
+            <div class="col-12 col-md-5 card my-2 ">
                 <picture>
                     <source src="/build/img/proy/API-Pixabay.webp" type="image/webp">
                     <source src="/build/img/proy/API-Pixabay.JPG" type="image/jpg">
@@ -142,7 +160,7 @@
                 </picture>
                 <div class="card-body text-center text-white">
                     <h4 class="card-tittle">API de banco de imagenes</h4>
-                    <p>App para consultar banco de imágenes en bixabay, con <span class="js">Javascript</span></p>
+                    <p>App para consultar una API de banco de imágenes en bixabay, con <span class="js">Javascript</span></p>
                     <p>Tecnólogias: <span class="js">Javascript</span></p>
                 </div>
                 <div class="icons-card d-flex justify-content-evenly">
@@ -151,7 +169,7 @@
                 </div>
             </div>
 
-            <div class="card my-2 ">
+            <div class="col-12 col-md-5 card my-2 ">
                 <picture>
                     <source src="/build/img/proy/API-Cotizador.webp" type="image/webp">
                     <source src="/build/img/proy/API-Cotizador.JPG" type="image/jpg">
@@ -159,7 +177,7 @@
                 </picture>
                 <div class="card-body text-center text-white">
                     <h4 class="card-tittle">API de cotizador de criptomonedas</h4>
-                    <p>App para consultar precio de Criptomoneda, en base a una moneda, con <span class="js">Javascript</span></p>
+                    <p>App para consultar precio de Criptomoneda de una API, en base a una moneda, con <span class="js">Javascript</span></p>
                     <p>Tecnólogias: <span class="js">Javascript</span></p>
                 </div>
                 <div class="icons-card d-flex justify-content-evenly">
@@ -167,6 +185,11 @@
                     <p><a target="_blank" href="https://js-api-criptomoneda.netlify.app/"><i class="far fa-eye"></i></a></p>
                 </div>
             </div>
+
+
+            <!-- <div class="col-12 d-flex justify-content-center">
+                <a href="#" class="btn btn-primary">Ver más</a>
+            </div> -->
 
         </div>
     </main>
