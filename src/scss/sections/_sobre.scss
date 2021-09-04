@@ -13,7 +13,7 @@
         font-weight: bold;
         a{
             text-decoration: none;
-            color: $blue-color;
+            color: lighten($color: $blue-color, $amount: 10);
         }
     }
 }
@@ -29,10 +29,17 @@
     .fa-telegram-plane{color: #0088cc;}
     .fa-github-square{color: $black-color;}
 
-    i:hover{
-        border: 0.1rem 0.1rem $blue-color;
+    i{
         border-radius: 50%;
-        box-shadow: 0.2rem 0.2rem 0.5rem $black-color;
+        padding: 0.5rem;
+        background: $white-color;
+
+        &:hover{
+            background: darken($color: $white-color, $amount: 20);
+            border: 0.1rem 0.1rem $blue-color;
+            box-shadow: 0.2rem 0.2rem 0.5rem $black-color;
+        }
+
     }
 }
 
