@@ -1,0 +1,16 @@
+<div class="p-1 flex flex-col border-blue-600 border-2 rounded mx-auto shadow-xl shadow-indigo-600 bg-slate-400 min-h-[15rem] md:min-h-[32rem]">
+
+  <div class="w-full m-auto p-2">
+    <img src="/assets/proys/{{img}}" alt="project">
+  </div>
+  <div class="w-full  bg-white p-3 md:p-5 text-sm">
+    <h4 class="text-center py-2 text-2xl font-bold text-indigo-600 border-b-4 border-indigo-600">{{ name }}</h4>
+    <p class="border-b-2 border-indigo-600 my-2">{{ description }}</p>
+    <p class="my-2">Tecnológias: {{ tecnologies }}</p>
+    <div class="mx-auto flex justify-evenly">
+      <a [href]="git" target="_blank" class="text-xs p-2 hover:cursor-pointer bg-black hover:bg-gray-800 rounded-lg uppercase text-white font-bold text-center"><i class="fab fa-github-alt" style="color: #ffffff;"></i> Git</a>
+      <a *ngIf="url !== null " [href]="url" target="_blank" class="text-xs p-2 hover:cursor-pointer bg-blue-600 hover:bg-blue-700 rounded-lg uppercase text-white font-bold text-center"><i class="far fa-eye" style="color: #ffffff;"></i> Demo</a>
+    </div>
+  </div>
+
+</div>
